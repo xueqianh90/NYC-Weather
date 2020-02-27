@@ -33,7 +33,7 @@ if __name__ == '__main__':
     urlData = get_noaa_data(url, params, creds)
     urlData.to_csv('weatherData.csv', index=False)
 
-    # Forecast NYC's weather data from National Weather Service API
+    # Forecasted NYC's weather data from National Weather Service API
     forecast_url = 'https://api.weather.gov/gridpoints/OKX/41,74/forecast?units=us'
     forecast_data = get_forecast_data(forecast_url)
 
